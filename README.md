@@ -58,7 +58,7 @@ SoroStandards/
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Open issues are labelled `drips-wave` and are ready to claim.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

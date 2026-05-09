@@ -5,7 +5,7 @@ Thank you for contributing! This guide is designed for async, parallel work — 
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_ORG/SoroStandards.git
+git clone https://github.com/Stellar-Project-Hub/SoroStandards.git
 cd SoroStandards
 rustup target add wasm32-unknown-unknown
 cargo build
@@ -14,9 +14,9 @@ cargo test
 
 ## Directory Map — Where to Work
 
-Each contract is a fully self-contained Rust crate. **You only need to touch the directory for your issue.**
+Each contract is a fully self-contained Rust crate. You only need to touch the directory for your issue.
 
-```
+```text
 contracts/
 ├── sep41-fungible/src/lib.rs   ← SEP-41 fungible token logic
 ├── nft/src/lib.rs              ← NFT mint/transfer/burn logic
@@ -29,26 +29,31 @@ docs/                           ← Specification markdown files
 scripts/                        ← Deployment helper scripts (bash/JS)
 ```
 
-**Safe zones for contributors** — you will never need to modify:
+## Safe zones for contributors
+
+You will never need to modify:
+
 - `Cargo.toml` (workspace root) — maintainer-only
 - `.github/workflows/` — maintainer-only
-- Another contract's directory unless your issue explicitly spans multiple contracts
+- another contract's directory unless your issue explicitly spans multiple contracts
 
 ## Claiming an Issue
 
-1. Find an open issue labelled `drips-wave`.
-2. Comment `I'd like to work on this` — a maintainer will assign it within 24 h.
-3. Each issue has a **7-day sprint window**. If you need more time, comment on the issue.
+Find an open issue labelled `good first issue` or `enhancement`.
+
+Comment `I'd like to work on this` — a maintainer will assign it within 24 h.
+
+Each issue has a 7-day sprint window. If you need more time, comment on the issue.
 
 ## Branch Naming
 
-```
-<type>/<issue-number>-<short-slug>
-# Examples:
-feat/4-sep41-transfer
-fix/3-nft-token-uri
-docs/1-contributing-guide
-```
+`<type>/<issue-number>-<short-slug>`
+
+Examples:
+
+- `feat/4-sep41-transfer`
+- `fix/3-nft-token-uri`
+- `docs/1-contributing-guide`
 
 ## Pull Request Checklist
 
@@ -63,22 +68,13 @@ Before opening a PR, confirm:
 
 ## Commit Style
 
-Follow [Conventional Commits](https://www.conventionalcommits.org/):
+Follow Conventional Commits:
 
-```
-feat(sep41): implement transfer and transfer_from
-fix(nft): correct owner lookup after burn
-docs(vesting): add cliff calculation example
-test(multisig): add threshold boundary tests
-```
-
-## Code Style
-
-- `cargo fmt` is enforced by CI — run it before every commit.
-- `cargo clippy -- -D warnings` is enforced by CI.
-- No `unwrap()` in contract code — use explicit panics with messages.
-- All storage keys must be defined in a `DataKey` enum.
+- `feat(sep41): implement transfer and transfer_from`
+- `fix(nft): correct owner lookup after burn`
+- `docs(vesting): add cliff calculation example`
+- `test(multisig): add threshold boundary tests`
 
 ## Questions
 
-Open a Discussion or ping `@maintainers` in your issue thread.
+If you have questions about a specific task, please comment directly on the GitHub Issue or start a thread in the Discussions tab.

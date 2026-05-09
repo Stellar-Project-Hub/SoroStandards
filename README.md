@@ -2,7 +2,7 @@
 
 > The ERC-20/ERC-721 moment for Soroban — a production-ready, auditable library of contract standards any developer can fork and deploy in minutes.
 
-[![CI](https://github.com/YOUR_ORG/SoroStandards/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_ORG/SoroStandards/actions/workflows/ci.yml)
+[![CI](https://github.com/Stellar-Project-Hub/SoroStandards/actions/workflows/ci.yml/badge.svg)](https://github.com/Stellar-Project-Hub/SoroStandards/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Standards Included
@@ -26,7 +26,7 @@
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_ORG/SoroStandards.git
+git clone https://github.com/Stellar-Project-Hub/SoroStandards.git
 cd SoroStandards
 
 # Build all contracts

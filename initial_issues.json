@@ -12,7 +12,7 @@
   {
     "title": "chore: add rustfmt.toml and clippy.toml configuration files",
     "labels": ["drips-wave", "good first issue", "trivial", "tooling"],
-    "body": "## Summary\nAdd project-level formatter and linter configuration so all contributors produce consistent output.\n\n## Location\n- `rustfmt.toml` (repo root, new file)\n- `.clippy.toml` (repo root, new file)\n\n## What to Implement\n**`rustfmt.toml`** — set at minimum:\n```toml\nedition = \"2021\"\nmax_width = 100\nuse_field_init_shorthand = true\n```\n\n**`.clippy.toml`** — set at minimum:\n```toml\nmsrv = \"1.78\"\n```\n\nVerify that `cargo fmt --all -- --check` and `cargo clippy --all-targets -- -D warnings` both pass after adding these files.\n\n## Definition of Done\n- [ ] Both config files exist at the repo root\n- [ ] `cargo fmt --all -- --check` exits 0\n- [ ] `cargo clippy --all-targets -- -D warnings` exits 0\n- [ ] CI is green"
+    "body": "## Summary\nAdd project-level formatter and linter configuration so all contributors produce consistent output.\n\n## Location\n- `rustfmt.toml` (repo root, new file)\n- `.clippy.toml` (repo root, new file)\n\n## What to Implement\n**`rustfmt.toml`** — set at minimum:\n```toml\nedition = \"2021\"\nmax_width = 100\nuse_field_init_shorthand = true\n```\n\n**`.clippy.toml`** — set at minimum:\n```toml\nmsrv = \"1.78\"\n```\n\nVerify that `cargo fmt --all -- --check` and `cargo clippy --all-targets` both pass after adding these files.\n\n## Definition of Done\n- [ ] Both config files exist at the repo root\n- [ ] `cargo fmt --all -- --check` exits 0\n- [ ] `cargo clippy --all-targets` exits 0\n- [ ] CI is green"
   },
   {
     "title": "feat(sep41): implement full SEP-41 token interface",

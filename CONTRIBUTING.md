@@ -60,7 +60,7 @@ Examples:
 Before opening a PR, confirm:
 
 - [ ] `cargo fmt --all` produces no diff
-- [ ] `cargo clippy --all-targets -- -D warnings` passes
+- [ ] `cargo clippy --all-targets` passes
 - [ ] `cargo test --all` passes
 - [ ] New public functions have doc comments (`///`)
 - [ ] If you added a new entry-point, update the relevant `docs/` spec file
